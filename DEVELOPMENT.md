@@ -25,7 +25,7 @@ source ~/reachy_mini_resources/.venv/bin/activate
 python -m pip install -U pip
 python -m pip install "reachy-mini[mujoco]"
 
-cd ~/reachy_mini_resources
+cd ~/Desktop
 git clone https://github.com/suhaasteja/reachy_mini_meditation_tutor.git
 ```
 
@@ -45,7 +45,7 @@ So it shows up in the Dashboard "Apps" list:
 
 ```bash
 source ~/reachy_mini_resources/.venv/bin/activate
-pip install -e ~/reachy_mini_resources/reachy_mini_meditation_tutor
+pip install -e ~/Desktop/reachy_mini_meditation_tutor
 ```
 
 Then restart the daemon.
@@ -60,7 +60,7 @@ Then restart the daemon.
 ### Option B: Run directly (dev)
 ```bash
 source ~/reachy_mini_resources/.venv/bin/activate
-python ~/reachy_mini_resources/reachy_mini_meditation_tutor/reachy_mini_meditation_tutor/main.py
+python ~/Desktop/reachy_mini_meditation_tutor/reachy_mini_meditation_tutor/main.py
 ```
 
 App UI:

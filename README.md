@@ -35,7 +35,7 @@ python -m pip install "reachy-mini[mujoco]"
 ### 2) Clone this repo
 
 ```bash
-cd ~/reachy_mini_resources
+cd ~/Desktop
 git clone https://github.com/suhaasteja/reachy_mini_meditation_tutor.git
 ```
 
@@ -43,7 +43,7 @@ git clone https://github.com/suhaasteja/reachy_mini_meditation_tutor.git
 
 ```bash
 source ~/reachy_mini_resources/.venv/bin/activate
-pip install -e ~/reachy_mini_resources/reachy_mini_meditation_tutor
+pip install -e ~/Desktop/reachy_mini_meditation_tutor
 ```
 
 ### 4) Run the simulation daemon (macOS)
