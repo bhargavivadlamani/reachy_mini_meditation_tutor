@@ -16,11 +16,24 @@ A Reachy Mini app that runs against the Reachy Mini daemon (simulation or real r
 - App UI (served by the app): `reachy_mini_meditation_tutor/static/`
 - Plan / notes: `plan.md`
 
+## Setup (recommended)
+
+```bash
+mkdir -p ~/reachy_mini_resources
+python3 -m venv ~/reachy_mini_resources/.venv
+source ~/reachy_mini_resources/.venv/bin/activate
+python -m pip install -U pip
+python -m pip install "reachy-mini[mujoco]"
+
+cd ~/reachy_mini_resources
+git clone https://github.com/suhaasteja/reachy_mini_meditation_tutor.git
+```
+
 ## Run the simulation (macOS)
 Use the venv under `~/reachy_mini_resources/.venv` (MuJoCo GUI works best via `mjpython` on macOS):
 
 ```bash
-source /Users/mac/reachy_mini_resources/.venv/bin/activate
+source ~/reachy_mini_resources/.venv/bin/activate
 mjpython -m reachy_mini.daemon.app.main --sim
 ```
 
@@ -31,8 +44,8 @@ Dashboard:
 So it shows up in the Dashboard "Apps" list:
 
 ```bash
-source /Users/mac/reachy_mini_resources/.venv/bin/activate
-pip install -e /Users/mac/reachy_mini_resources/reachy_mini_meditation_tutor
+source ~/reachy_mini_resources/.venv/bin/activate
+pip install -e ~/reachy_mini_resources/reachy_mini_meditation_tutor
 ```
 
 Then restart the daemon.
@@ -46,8 +59,8 @@ Then restart the daemon.
 
 ### Option B: Run directly (dev)
 ```bash
-source /Users/mac/reachy_mini_resources/.venv/bin/activate
-python /Users/mac/reachy_mini_resources/reachy_mini_meditation_tutor/reachy_mini_meditation_tutor/main.py
+source ~/reachy_mini_resources/.venv/bin/activate
+python ~/reachy_mini_resources/reachy_mini_meditation_tutor/reachy_mini_meditation_tutor/main.py
 ```
 
 App UI:
